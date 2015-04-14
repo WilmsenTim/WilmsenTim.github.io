@@ -1,0 +1,329 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    background-image: url(../img/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+    width: 66%;
+    margin: 0 auto;
+    min-width: 622px;
+    box-shadow: 0 0 40px #000;
+}
+
+#waarom, main, footer {
+    color: white;
+}
+
+/*========================
+======    Header    ======
+========================*/
+
+header {
+    background-image:url('../img/Index/Header.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    height: 300px;
+}
+
+/*========================
+======    NAV    ======
+========================*/
+
+nav {  
+    height: 40px;  
+    width: 100%; 
+    font-size: 100%;
+    font-weight: bold;  
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+}  
+nav ul {  
+    padding: 0;  
+    margin: 0 auto;  
+    width: 600px;  
+    height: 40px;  
+} 
+
+nav li {  
+    display: inline;  
+    float: left;
+    margin-top: 30px;
+} 
+
+nav a {  
+    color: black; 
+    display: inline-block;  
+    width: 100px;  
+    text-align: center;  
+    text-decoration: none;  
+    line-height: 40px;  
+    
+}
+
+nav li:nth-child(3) {
+    width: 176px;
+    margin: 10px 12px 0;
+}
+
+nav a:hover {
+    background-color: rgba(1,1,1,0.7);
+    border-radius: 200px;
+    color: white;
+}
+
+li:nth-child(3):hover a {
+    background-color: transparent;
+}
+
+/*========================
+======    WAAROM    ======
+========================*/
+
+#waarom {
+    background-color: #2b2b2b;
+    width: 100%;
+}
+
+#waarom h2, main h2 {
+    padding: 20px 30px;
+    width: 291px;
+    margin: 0 auto;
+    line-height: 40px;
+    background-color: #2b2b2b;
+    z-index: 1;
+    position: relative;
+    box-sizing: content-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140%;
+    text-align: center;
+}
+
+.line, .line2 {
+    margin: 0 50px;
+    background-color: white;
+    height: 6px;
+    position: relative;
+    z-index: 0;
+    top: 43px;
+}
+
+#waarom p {
+    width: 70%;
+    margin: 15px auto 40px;
+    text-align: center;
+}
+
+#waarom p:last-child {
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+/*========================
+======    MAIN   ======
+========================*/
+
+main {
+    background-color: #494848;
+    width: 100%;
+    max-height: 1580px;
+}
+
+main h2 {
+    background-color: #494848;
+    width: 350px;
+}
+
+.line2 {
+    margin: 0 200px;
+}
+
+/*========================
+======    FOOTER    ======
+========================*/
+
+
+footer {
+    width: 100%; 
+    font-size: 90%;
+    font-weight: bold;  
+    position: relative;
+    background-color: black;
+}
+
+footer ul {
+    padding: 0;  
+    margin: 0 auto;  
+    width: 450px;
+}
+
+footer li {
+    float: left;
+    display: block;
+    margin: 30px 3px 20px 3px;
+}
+
+footer li:nth-child(1) {
+    margin-left: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+}
+
+footer p {
+    font-size: 70%;
+    padding: 0 0 10px 0;  
+    margin: 0 auto;  
+    width: 130px;
+}
+
+footer img {
+    float: right;
+    position: relative;
+    width: 80px;
+    margin-right: 20px;
+    bottom: 22px;
+}
+
+/*========================
+======    RESPONSIVE    ======
+========================*/
+
+@media only screen and (min-width: 1170px) {
+    
+    nav {
+        height: 40px;  
+        width: 100%; 
+        font-size: 100%;
+        font-weight: bold;  
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 120%;
+    }
+    
+    nav ul {  
+        padding: 0;  
+        margin: 0 auto;  
+        width: 760px;  
+        height: 40px;  
+    }
+    
+    nav li {  
+        display: inline;  
+        float: left;
+        margin: 30px 10px;
+    } 
+
+    nav a {  
+        color: black; 
+        display: inline-block;  
+        width: 100px;  
+        text-align: center;  
+        text-decoration: none;  
+        line-height: 40px;  
+
+    }
+    
+    nav a:first-child {
+        width: 120px;
+    }
+    
+    footer img {
+        float: right;
+        width: 10%;
+        bottom: 35px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+    #wrapper {
+        min-width: 1024px;
+    }
+    
+    nav {  
+        height: 40px;  
+        width: 100%; 
+        font-weight: bold;  
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 120%;
+    }  
+    nav ul {  
+        padding: 0;  
+        margin: 0 auto;  
+        width: 900px;  
+        height: 40px;  
+    } 
+
+    nav li {  
+        display: inline;  
+        float: left;
+        margin-top: 30px;
+        font-size: 120%;
+        margin: 30px 10px 0;
+    }
+    
+    nav li:nth-child(3) {
+        width: 176px;
+        margin: 10px 20px 0;
+    }
+    
+    nav a {
+        color: black; 
+        display: inline-block;  
+        width: 150px;  
+        text-align: center;  
+        text-decoration: none;  
+        line-height: 40px;  
+    }
+    
+    #waarom h2, main h2 {
+        text-align: center;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #wrapper {
+        min-width: 480px;
+        width: 100%;
+    }
+    
+    body {
+        font-size: 150%;
+    }
+    
+    nav ul {
+        font-size: 50%;
+    }
+    footer ul {
+        font-size: 100%;
+        width: 70%
+    }
+}
+
+/*========================
+======    CLEARFIX    ======
+========================*/
+
+
+.cfx:before,  
+.cfx:after {  
+    content: " ";  
+    display: table;  
+}  
+.cfx:after {  
+    clear: both;  
+}
